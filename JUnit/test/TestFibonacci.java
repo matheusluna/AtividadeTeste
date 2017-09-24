@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-import entidade.Cubo;
+import entidade.Fibonacci;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,9 +15,9 @@ import static org.junit.Assert.*;
  *
  * @author mathe
  */
-public class TestCubo {
+public class TestFibonacci {
     
-    public TestCubo() {
+    public TestFibonacci() {
     }
     
     @BeforeClass
@@ -38,24 +37,16 @@ public class TestCubo {
     }
     
     @Test
-    public void ct1(){
-        assertEquals(9, Cubo.getAreaLado(2) , 0);
+    public void ct1() throws Exception{
+        assertEquals(2, Fibonacci.getEnesimo(3));
     }
     @Test
-    public void ct2(){
-        assertEquals(4, Cubo.getAreaLateral(1) , 0);
+    public void ct2() throws Exception{
+        assertEquals(13, Fibonacci.getEnesimo(7));
     }
     @Test
-    public void ct3(){
-        assertEquals(24, Cubo.getAreaTotal(2) , 0);
-    }
-    @Test
-    public void ct4(){
-        assertEquals(27, Cubo.getVolume(3) , 0);
-    }
-    @Test
-    public void ct5(){
-        assertEquals(125, Cubo.getVolume(5) , 0);
+    public void ct3() throws Exception{
+        assertEquals(34, Fibonacci.getEnesimo(9));
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
